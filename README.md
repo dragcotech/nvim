@@ -8,11 +8,11 @@
 - :MarkdownPreview
 - :ToggleTerm 1 size=60 direction=vertical
 - :ToggleTerm 2 size=60 direction=horizontal
-- :lua vim.diagnostic.setloclist() #check all diagnostic in project
-- :set expandtab tabstop=4 shiftwidth=4 #set prettier
-- :noh :nohlsearch
-- :5,10> -- gg=G
-- :bufdo bd
+- :lua vim.diagnostic.setloclist() --check all diagnostic in project
+- :set expandtab tabstop=4 shiftwidth=4 --set prettier
+- :noh :nohlsearch --delete hightlight
+- :5,10> -- gg=G --tab line
+- :bufdo bd --delete all bufferline
 
 # Keyboard Shortcuts
 

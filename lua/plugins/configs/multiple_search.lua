@@ -1,4 +1,4 @@
 return {
   'AckslD/muren.nvim',
-    config = true,
+  config = true,
 }
