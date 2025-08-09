@@ -12,6 +12,7 @@
 - :set expandtab tabstop=4 shiftwidth=4 #set prettier
 - :noh :nohlsearch
 - :5,10> -- gg=G
+- :bufdo bd
 
 # Keyboard Shortcuts
 
