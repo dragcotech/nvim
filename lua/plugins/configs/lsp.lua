@@ -113,6 +113,12 @@ return {
             end,
         })
 
+        vim.filetype.add({
+            extension = {
+                jte = "html",
+            },
+        })
+
         -- display diagnostics at point
         vim.o.updatetime = 250
         vim.cmd [[autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })]]

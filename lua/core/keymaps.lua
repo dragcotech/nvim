@@ -1,3 +1,7 @@
+-- save
+vim.keymap.set('n', '<C-s>', ':w<CR>')
+vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>')
+
 -- Diagnostic
 vim.keymap.set('n', '<leader>d', ':lua vim.diagnostic.setloclist()')
 vim.keymap.set('n', '<leader>da', ':set expandtab tabstop=4 shiftwidth=4')
