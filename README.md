@@ -70,3 +70,12 @@
 | gc0      | above       |
 | gco      | below       |
 | gcA      | end         |
+
+## Completion
+| Keyboard | Description |
+|----------|-------------|
+| Ctrl + b | scroll up   |
+| Ctrl + f | scroll down |
+| Ctrl + o | re-complete |
+| Ctrl + e | de-complete |
+| Enter    | choose      |
