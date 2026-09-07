@@ -33,20 +33,16 @@ require("lazy").setup({
     require("plugins.configs.multiple_search"),
     require("plugins.configs.escape"),
     require("plugins.configs.ibl"),
+    require("plugins.configs.conform"),
     -- require("plugins.configs.rust_tools"),
     -- require("plugins.configs.lsp_saga"),
     -- Themes
     require("plugins.themes.gruvbox"),
-    require("plugins.themes.darkvoid"),
-    require("plugins.themes.nordic"),
     require("plugins.themes.everforest"),
-    require("plugins.themes.andromeda"),
     require("plugins.themes.cyberdream"),
-    require("plugins.themes.rosepine"),
     require("plugins.themes.onedark"),
     require("plugins.themes.github"),
-    require("plugins.themes.everviolet"),
-    require("plugins.themes.neofusion")
+    require("plugins.themes.dracula"),
 })
 
 -- default theme

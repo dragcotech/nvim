@@ -1,0 +1,6 @@
+:setlocal filetype?
+:verbose setlocal tabstop?
+:verbose setlocal shiftwidth?
+:verbose setlocal softtabstop?
+:verbose setlocal expandtab?
+:verbose setlocal indentexpr?
