@@ -1,36 +1,40 @@
 return {
-    'nvim-treesitter/nvim-treesitter',
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
     build = ":TSUpdate",
+    lazy = false,
 
     config = function()
-        -- If It run on windows, set clang compiler
-        if vim.loop.os_uname().sysname == "Windows_NT" then
-            require('nvim-treesitter.install').compilers = { "clang" }
-            -- require('nvim-treesitter.install').prefer_git = true
-        end
+        require("nvim-treesitter").install({
+            "c",
+            "cpp",
+            "lua",
+            "html",
+            "css",
+            "tsx",
+            "javascript",
+            "typescript",
+            "rust",
+            "python",
+        })
 
-        require('nvim-treesitter.configs').setup({
-            ensure_installed = {
+        vim.api.nvim_create_autocmd("FileType", {
+            pattern = {
+                "c",
+                "cpp",
                 "lua",
                 "html",
-                "pug",
                 "css",
-                "scss",
-                "tsx",
                 "javascript",
                 "typescript",
-                "svelte",
+                "typescriptreact",
                 "rust",
                 "python",
-                "java",
             },
-            highlight = {
-                enable = true,
-                additional_vim_regex_highlighting = false,
-            },
-            indent = {
-                enable = true,
-            },
+
+            callback = function(args)
+                vim.treesitter.start(args.buf)
+            end,
         })
-    end
+    end,
 }
