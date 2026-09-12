@@ -37,16 +37,11 @@ require("lazy").setup({
     -- require("plugins.configs.rust_tools"),
     -- require("plugins.configs.lsp_saga"),
     -- Themes
-    require("plugins.themes.gruvbox"),
-    require("plugins.themes.everforest"),
-    require("plugins.themes.cyberdream"),
-    require("plugins.themes.onedark"),
-    require("plugins.themes.github"),
     require("plugins.themes.dracula"),
 })
 
 -- default theme
-vim.cmd.colorscheme "onedark"
+vim.cmd.colorscheme "dracula"
 -- vim.opt.background = "dark"
 -- vim.cmd("highlight Normal guibg=none")
 -- vim.cmd("highlight NormalNC guibg=none")

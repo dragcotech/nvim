@@ -5,8 +5,9 @@ return {
 
         keys = {
             {
-                "<M-t>",
+                "<leader>t",
                 "<cmd>ToggleTerm<CR>",
+                mode = { "n", "i", "t" },
                 desc = "Toggle Terminal",
             },
         },
